@@ -1,2 +1,5 @@
-# SIPIF-net
-This code represents the Siamese Pseudo Invariant Feature Network (SIPIF-net).
+![image](https://github.com/KThoney/SIPIF-net/assets/106787991/6ca93773-d3a1-4478-8542-cd369b6ce406)# SIPIF-net
+This code represents the Siamese Pseudo Invariant Feature Network (SIPIF-net). The SIPIF-net is designed to extract pseudo-invariant features (PIF) for relative radiometric normalization between bi-temporal satellite images.
+The deep feature extraction part of the SIPIF-net consists of four stages composed of conv block and convolutional block attention module (CBAM). The conv block is sequentially composed of a convolution layer, batch normalization, rectified linear unit (ReLU), and a max pooling layer for stably generating feature maps while preventing overfitting. The max pooling layer is set to kernel size 2�2 and stride 2 to reduce the size of feature maps. The CBAM improves the recognition rate for important elements in feature maps using channel attention module (CAM) and spatial attention module (SAM).
+
+![image](https://github.com/KThoney/SIPIF-net/assets/106787991/96c870e5-c6dc-413c-be7f-d330366c5322)
